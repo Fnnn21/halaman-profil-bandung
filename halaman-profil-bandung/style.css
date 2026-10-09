@@ -1,0 +1,160 @@
+/* Reset Style Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+/* Header & Navigasi */
+header {
+  background-color: #005b96;
+  color: white;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+/* 1. FLEXBOX: Navigasi Utama */
+nav ul {
+  display: flex; /* Mengaktifkan Flexbox */
+  justify-content: center; /* Mengetengahkan item menu */
+  gap: 20px; /* Jarak antar menu */
+  list-style: none;
+  background-color: #013243;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #005b96;
+}
+
+/* 2. FLEXBOX: Layout Utama (Main Area & Sidebar) */
+main {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-wrap: wrap; /* Menyesuaikan otomatis jika dibuka di HP */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Proporsi Artikel Utama & Sidebar dengan Flexbox */
+main .main-content {
+  flex: 3; /* Artikel utama mengambil porsi 3x lebih besar */
+  min-width: 300px;
+}
+
+aside {
+  flex: 1; /* Sidebar mengambil porsi 1x */
+  min-width: 260px;
+}
+
+/* Style Section & Gambar */
+section {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #005b96;
+  border-bottom: 2px solid #005b96;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+figure {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 3. FLEXBOX: Pembungkus Objek Wisata */
+.wisata-container {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.wisata-card {
+  flex: 1 1 calc(50% - 1.5rem); /* Membuat 2 kolom tempat wisata sejajar */
+  min-width: 250px;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.wisata-card h3 {
+  color: #013243;
+  margin-bottom: 0.5rem;
+}
+
+/* Style Sidebar */
+aside article {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+aside h2 {
+  color: #005b96;
+  margin-bottom: 0.2rem;
+}
+
+aside figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #013243;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
